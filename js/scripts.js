@@ -49,4 +49,26 @@ function salvarDados() {
     localStorage.setItem("corridas", JSON.stringify(corridas));
 }
 
-const dataHoraAtual = new Date();
+function dataHoraCorrida() {
+    const dataAtual = new Date();
+    const horaAtual = new Date();
+
+    const dia = dataAtual.getDate();
+    const mes = dataAtual.getMonth() + 1;
+    const ano = dataAtual.getFullYear();
+    const hora = horaAtual.getHours();
+    const minutos = horaAtual.getMinutes();
+
+    const dataFormatada = `${dia.toString().padStart(2, '0')}/${mes.toString().padStart(2, '0')}/${ano}`;
+    const horaFormatada = `${hora.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}`;
+
+    document.getElementById('data').value = dataFormatada;
+    document.getElementById('hora').value = horaFormatada;
+}
+
+function gravarData() {
+    const data = document.getElementById('data').value;
+    const [dia, mes, ano] = data.split('/');
+    const dataFormatada = `${ano}-${mes}-${dia}`;
+    localStorage.setItem('data', dataFormatada);
+}

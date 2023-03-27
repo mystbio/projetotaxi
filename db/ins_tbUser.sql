@@ -1,0 +1,1 @@
+INSERT INTO `tbUser` (`coduser`, `name`, `username`, `password`, `admin`) VALUES (1, 'Administrador', 'admin', 'admin', 'x');

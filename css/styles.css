@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+    background-image: linear-gradient(45deg, #cb0000, #390000);
+    font-family: 'Lato', sans-serif;
+}
+
+.login {
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.login-rel {
+    background-color: #000;
+    position: absolute;
+    margin: 2%;
+    width: 90%;
+    padding: 2%;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.login h1 {
+    text-align: center;
+}
+
+input {
+    padding: 15px;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+#tipo-pagamento {
+    width: 90px;
+    height: 50px;
+    padding: 3px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.button {
+    background-color: dodgerblue;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+.buttondesc {
+    background-color: darkred;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.buttondesc:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.buttonfilter {
+    background-color: dodgerblue;
+    width: 18%;
+    text-align: center;
+    right: 0;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.buttonfilter:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+    color: #333;
+}
+
+table td {
+    font-size: .80em;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.datetimepicker {
+    display: inline-flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+}
+
+.datetimepicker input {
+    font-size: .90em;
+    height: .05em;
+    color: #333;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    .buttonfilter {
+        margin-top: 5px;
+    }
+
+    .datetimepicker {
+        margin-bottom: 5px;
+    }
+}

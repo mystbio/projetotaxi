@@ -31,6 +31,9 @@
                 <br>
                 <input style="padding-left: 40px; padding-right: 40px;" type="submit" class="button" value="Salvar">
             </form>
+            <br>
+            <br>
+            <a href="menu" class="cadastro" style="font-size: 20px;text-decoration: none;color: #fff;">Voltar</a>
         </div>
     </body>
 </html>

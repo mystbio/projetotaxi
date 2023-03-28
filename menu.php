@@ -32,6 +32,9 @@
             <input type="submit" class="button" value="Relatórios" onclick="goPage('relatorios')">
             <br>
             <br>
+            <input type="submit" class="button" value="Despesas" onclick="goPage('despesas')">
+            <br>
+            <br>
             <?php if($_SESSION['admin'] == 'x') : ?>
                 <input type="submit" class="button" value="Cadastro" onclick="goPage('cadastro')">
             <?php endif; ?>
